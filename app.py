@@ -11,3 +11,7 @@ def index():
 @app.route("/about")
 def about():
     return 'I am zoti. Welcome to my class.'
+
+@app.route("/contact")
+def about():
+    return render_template('contact.html',contact=9876352816)
