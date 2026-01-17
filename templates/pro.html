@@ -1,0 +1,10 @@
+{% for student in students %}
+    <tr>
+        <td>
+            <a href="{{ url_for('student_detail', student_id=student['id']) }}">
+                {{ student['id'] }}
+            </a>
+        </td>
+        <td>{{ student['name'] }}</td>
+    </tr>
+{% endfor %}

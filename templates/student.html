@@ -1,0 +1,25 @@
+{%extends 'base.html'%}
+{%block header%}
+<title>Student</title>
+{%endblock%}
+{%block body%}
+<h1>Student Detail</h1>
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Student Name</th>
+            <th>Address</th>
+            <th>Join Date</th>
+        </thead>
+        <tbody>
+            {%for student in students%}
+            <tr>
+                <td><a href="/students/{{student[0]}}">{{student[0]}}</a></td>
+                <td>{{student[1]}}</td>
+                <td>{{student[2]}}</td>
+                <td>{{student[3]}}</td>
+            </tr>
+            {%endfor%}
+        </tbody>
+    </table>
+{%endblock%}

@@ -1,0 +1,13 @@
+{%extends 'base.html'%}
+{%block header%}
+<title>{{student[1]}} Details</title>
+{%endblock%}
+{%block body%}
+<h1>Details About {{student[1]}}</h1>
+<ol>
+    <li>ID: {{student[0]}}</li>
+    <li>Name: {{student[1]}}</li>
+    <li>Address: {{student[2]}}</li>
+    <li>Join Date: {{student[3]}}</li>
+</ol>
+{%endblock%}
